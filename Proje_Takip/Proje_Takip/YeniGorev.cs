@@ -39,7 +39,7 @@ namespace Proje_Takip
                 }
                 i++;
             }
-            gridControl1.DataSource = Baglan.Baglanti().gorevHareketleri(_gorev.Id);
+            dataGridView1.DataSource = Baglan.Baglanti().gorevHareketleri(_gorev.Id);
         }
         
         private Proje _proje;
@@ -48,7 +48,7 @@ namespace Proje_Takip
         public int durum = 1;
 
 
-
+        // from yüklendiğinde gerçekleşecek olan işlev
         private void YeniGorev_Load(object sender, EventArgs e)
         {
             txt_projeid.Text = _proje.Id.ToString();
@@ -82,7 +82,7 @@ namespace Proje_Takip
         }
 
 
-
+        // comboboz a kullanıcıları yazdıran metot
         private void kisiler()
         {
             foreach (User item in _proje.Kisiler)
@@ -93,7 +93,7 @@ namespace Proje_Takip
 
 
 
-
+        // kaydet butonuna basıldığında gerçekleşecek olan işlev
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
             if(!String.IsNullOrEmpty(txt_baslik.Text) && !String.IsNullOrEmpty(txt_aciklama.Text) && cmb_gorevli.SelectedIndex >= 0)
@@ -140,7 +140,7 @@ namespace Proje_Takip
         }
 
 
-
+        // ekle butona basıldığında gerçekleşecek olan işlev
         private void btn_ekle_Click(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(txt_kontList.Text))
@@ -160,7 +160,7 @@ namespace Proje_Takip
         }
 
 
-
+        // panel içerisine göreve ait kontrol elemanlarını ekleyen metot
         private void kontrolListesi()
         {
             if(_gorev != null)
@@ -185,7 +185,7 @@ namespace Proje_Takip
         }
 
 
-
+        // kontrol elemanın cheched özelliği değiştiğinde gerçekleşecek olan işlev
         void cb_CheckedChanged(object sender, EventArgs e)
         {
             int i = 0;
@@ -198,6 +198,8 @@ namespace Proje_Takip
             }
         }
 
+
+        // görevli combox ı değiştiğinde gerçekleşecek olan işlev
         private void cmb_gorevli_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cmb_gorevli.SelectedIndex >= 0)

@@ -11,8 +11,11 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
             KontrolElemani k = new KontrolElemani();
+
             k.Id = 100;
+
             k.AltBaslik = "kullanıcı yetki güncelleme";
+
             k.Durum = true;
         }
     }

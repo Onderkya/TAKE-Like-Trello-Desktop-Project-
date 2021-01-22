@@ -28,7 +28,7 @@ namespace Proje_Takip
         public string GuvenlikSorusu { get { return _guvenlikSoru; } set { _guvenlikSoru = value; } }
         public string GuvenlikCevabi { get { return _guvenlikCevap; } set { _guvenlikCevap = gizle(value); } }
 
-
+        // kullanıcı parolasını kriptolayan metot
         private string gizle(string metin)
         {
             string gizlen;

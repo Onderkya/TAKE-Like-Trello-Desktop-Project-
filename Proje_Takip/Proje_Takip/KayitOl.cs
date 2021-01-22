@@ -17,6 +17,7 @@ namespace Proje_Takip
             InitializeComponent();
         }
 
+        // kaydet butonuna basıldığında gerçekleşecek olan işlev
         private void btn_kayit_Click(object sender, EventArgs e)
         {
             bool kontrol = true;

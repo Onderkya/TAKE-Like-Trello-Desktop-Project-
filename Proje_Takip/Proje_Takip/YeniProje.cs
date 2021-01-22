@@ -28,6 +28,7 @@ namespace Proje_Takip
         public Proje pr = new Proje();
 
 
+        // kaydet butotnuna basıldığında gerçekleşecek olan işlev
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
             bool kontrol = true;
@@ -70,6 +71,7 @@ namespace Proje_Takip
             
         }
 
+        // form yüklendiğinde gerçekleşecek olan işlev
         private void YeniProje_Load(object sender, EventArgs e)
         {
             if (pr.Id > 0)

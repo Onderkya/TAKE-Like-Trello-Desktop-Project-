@@ -1,6 +1,5 @@
 c:\users\dtr\documents\visual studio 2013\Projects\Proje_Takip\Proje_Takip\bin\Debug\Proje_Takip.exe.config
 C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.csprojResolveAssemblyReference.cache
-C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.Form1.resources
 C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.Properties.Resources.resources
 C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.csproj.GenerateResource.Cache
 C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\bin\Debug\Proje_Takip.exe
@@ -85,80 +84,4 @@ C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\bin\D
 C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.XtraRichEdit.v17.1.resources.dll
 C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.XtraRichEdit.v17.1.resources.dll
 C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.XtraRichEdit.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\Proje_Takip.exe.config
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\Proje_Takip.exe
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\Proje_Takip.pdb
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.Data.v17.1.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.Office.v17.1.Core.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.Printing.v17.1.Core.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.Utils.v17.1.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.XtraBars.v17.1.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.XtraEditors.v17.1.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.XtraGrid.v17.1.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\DevExpress.XtraRichEdit.v17.1.xml
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.Office.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.RichEdit.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.RichEdit.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.RichEdit.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.RichEdit.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.XtraGrid.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.XtraPrinting.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.XtraPrinting.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.XtraPrinting.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.XtraPrinting.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\de\DevExpress.XtraRichEdit.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\es\DevExpress.XtraRichEdit.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ja\DevExpress.XtraRichEdit.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\bin\Debug\ru\DevExpress.XtraRichEdit.v17.1.resources.dll
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.csprojAssemblyReference.cache
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.AnaEkran.resources
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.Form1.resources
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.KayitOl.resources
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.KisiEkle.resources
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.Properties.Resources.resources
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.YeniGorev.resources
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.YeniProje.resources
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.csproj.GenerateResource.cache
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.exe.licenses
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.csproj.CoreCompileInputs.cache
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.csproj.CopyComplete
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.exe
-C:\Users\Önder\Desktop\Yzm\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.pdb
+C:\Users\DTR\Documents\Visual Studio 2013\Projects\Proje_Takip\Proje_Takip\obj\Debug\Proje_Takip.GirisEkrani.resources

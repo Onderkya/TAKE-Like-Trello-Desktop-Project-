@@ -9,6 +9,7 @@ namespace Proje_Takip
 {
     public class Crypt
     {
+        // girilen metni kriptolayıp geri gönderen metot
         public static string sifrele(string sifrelenecekmetin)
         {
             MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();

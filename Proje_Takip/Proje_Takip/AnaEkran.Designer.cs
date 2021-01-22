@@ -64,16 +64,16 @@
             // lbl_projeAdi
             // 
             this.lbl_projeAdi.AutoSize = true;
-            this.lbl_projeAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_projeAdi.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_projeAdi.Location = new System.Drawing.Point(497, 35);
             this.lbl_projeAdi.Name = "lbl_projeAdi";
-            this.lbl_projeAdi.Size = new System.Drawing.Size(27, 37);
+            this.lbl_projeAdi.Size = new System.Drawing.Size(26, 39);
             this.lbl_projeAdi.TabIndex = 2;
             this.lbl_projeAdi.Text = ".";
             // 
             // btn_yeniProje
             // 
-            this.btn_yeniProje.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_yeniProje.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_yeniProje.Location = new System.Drawing.Point(26, 16);
             this.btn_yeniProje.Name = "btn_yeniProje";
             this.btn_yeniProje.Size = new System.Drawing.Size(434, 82);
@@ -85,7 +85,7 @@
             // lbl_kullanici
             // 
             this.lbl_kullanici.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_kullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_kullanici.Font = new System.Drawing.Font("Ubuntu", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_kullanici.Location = new System.Drawing.Point(1493, 21);
             this.lbl_kullanici.Name = "lbl_kullanici";
             this.lbl_kullanici.Size = new System.Drawing.Size(343, 67);
@@ -99,10 +99,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.list_projelerim.ContextMenuStrip = this.contextMenuStrip1;
             this.list_projelerim.FormattingEnabled = true;
-            this.list_projelerim.ItemHeight = 25;
+            this.list_projelerim.ItemHeight = 26;
             this.list_projelerim.Location = new System.Drawing.Point(26, 206);
             this.list_projelerim.Name = "list_projelerim";
-            this.list_projelerim.Size = new System.Drawing.Size(434, 554);
+            this.list_projelerim.Size = new System.Drawing.Size(434, 576);
             this.list_projelerim.TabIndex = 1;
             this.list_projelerim.SelectedIndexChanged += new System.EventHandler(this.list_projelerim_SelectedIndexChanged);
             // 
@@ -153,10 +153,10 @@
             this.list_yapilacak.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.list_yapilacak.FormattingEnabled = true;
-            this.list_yapilacak.ItemHeight = 25;
+            this.list_yapilacak.ItemHeight = 26;
             this.list_yapilacak.Location = new System.Drawing.Point(504, 206);
             this.list_yapilacak.Name = "list_yapilacak";
-            this.list_yapilacak.Size = new System.Drawing.Size(434, 554);
+            this.list_yapilacak.Size = new System.Drawing.Size(434, 576);
             this.list_yapilacak.TabIndex = 3;
             this.list_yapilacak.MouseDown += new System.Windows.Forms.MouseEventHandler(this.list_yapilacak_MouseDown);
             this.list_yapilacak.MouseEnter += new System.EventHandler(this.list_yapilacak_MouseEnter);
@@ -167,10 +167,10 @@
             this.list_yapiliyor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.list_yapiliyor.FormattingEnabled = true;
-            this.list_yapiliyor.ItemHeight = 25;
+            this.list_yapiliyor.ItemHeight = 26;
             this.list_yapiliyor.Location = new System.Drawing.Point(982, 206);
             this.list_yapiliyor.Name = "list_yapiliyor";
-            this.list_yapiliyor.Size = new System.Drawing.Size(434, 554);
+            this.list_yapiliyor.Size = new System.Drawing.Size(434, 576);
             this.list_yapiliyor.TabIndex = 5;
             this.list_yapiliyor.DragDrop += new System.Windows.Forms.DragEventHandler(this.list_yapiliyor_DragDrop);
             this.list_yapiliyor.DragEnter += new System.Windows.Forms.DragEventHandler(this.list_yapiliyor_DragEnter);
@@ -183,10 +183,10 @@
             this.list_tamamlanan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.list_tamamlanan.FormattingEnabled = true;
-            this.list_tamamlanan.ItemHeight = 25;
+            this.list_tamamlanan.ItemHeight = 26;
             this.list_tamamlanan.Location = new System.Drawing.Point(1460, 206);
             this.list_tamamlanan.Name = "list_tamamlanan";
-            this.list_tamamlanan.Size = new System.Drawing.Size(434, 554);
+            this.list_tamamlanan.Size = new System.Drawing.Size(434, 576);
             this.list_tamamlanan.TabIndex = 7;
             this.list_tamamlanan.DragDrop += new System.Windows.Forms.DragEventHandler(this.list_tamamlanan_DragDrop);
             this.list_tamamlanan.DragEnter += new System.Windows.Forms.DragEventHandler(this.list_tamamlanan_DragEnter);
@@ -227,7 +227,7 @@
             // 
             // AnaEkran
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1848, 806);
             this.Controls.Add(this.label4);
@@ -239,13 +239,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.list_projelerim);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Font = new System.Drawing.Font("Ubuntu", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MinimizeBox = false;
             this.Name = "AnaEkran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AnaEkran";
+            this.Text = "TAKE Proje Takip Sistemi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AnaEkran_FormClosed);
             this.Load += new System.EventHandler(this.AnaEkran_Load);

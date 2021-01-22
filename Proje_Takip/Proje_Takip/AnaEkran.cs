@@ -19,14 +19,14 @@ namespace Proje_Takip
 
         List<Proje> projelerim = new List<Proje>();
 
-
+        // from kapandığında uygulamayı sonlandıran metot
         private void AnaEkran_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
                 
-
+        // ana ekran yüklendiğinde kullanıcı adını ve projeleri listeleyen metot
         private void AnaEkran_Load(object sender, EventArgs e)
         {
             lbl_kullanici.Text = Baglan.Hesap.Ad+" "+Baglan.Hesap.Soyad;
@@ -34,6 +34,8 @@ namespace Proje_Takip
 
         }
 
+
+        // giriş yapan kullanıcının projelerini listeleyen metot
         void projeListele()
         {
             list_projelerim.Items.Clear();
@@ -47,7 +49,7 @@ namespace Proje_Takip
         }
 
 
-
+        // yeni proje oluşturulması için yönlendirme yapan metot
         private void btn_yeniProje_Click(object sender, EventArgs e)
         {
             YeniProje yp = new YeniProje();
@@ -56,7 +58,7 @@ namespace Proje_Takip
         }
 
 
-
+        // proje bilgilerini görüntülemek/güncellemek için yönlendirme yapan metot
         private void menu_goruntule_Click(object sender, EventArgs e)
         {
             int i = list_projelerim.SelectedIndex;
@@ -67,7 +69,7 @@ namespace Proje_Takip
         }
 
 
-
+        // farklı proje seçimi yapıldığında projeye ait detay bilgilerini değiştiren metot
         private void list_projelerim_SelectedIndexChanged(object sender, EventArgs e)
         {
             list_yapilacak.Items.Clear();
@@ -76,28 +78,25 @@ namespace Proje_Takip
             lbl_projeAdi.Text = list_projelerim.SelectedItem.ToString();
 
             if (list_projelerim.SelectedItem !=null)
-            {
-                
-            int i = list_projelerim.SelectedIndex;
-            foreach (Gorev item in projelerim[i].Gorevler)
-            {
-                int durum = Baglan.Baglanti().gorevDurumOgren(item.Id);
-                switch (durum)
+            {                
+                int i = list_projelerim.SelectedIndex;
+                foreach (Gorev item in projelerim[i].Gorevler)
                 {
-                    case 1: list_yapilacak.Items.Add(item.Baslik); break;
-                    case 2: list_yapiliyor.Items.Add(item.Baslik); break;
-                    case 3: list_tamamlanan.Items.Add(item.Baslik); break;
-                    default:
-                        break;
+                    int durum = Baglan.Baglanti().gorevDurumOgren(item.Id);
+                    switch (durum)
+                    {
+                        case 1: list_yapilacak.Items.Add(item.Baslik); break;
+                        case 2: list_yapiliyor.Items.Add(item.Baslik); break;
+                        case 3: list_tamamlanan.Items.Add(item.Baslik); break;
+                        default: break;
+                    }
                 }
-            }
-
             }
             
         }
 
 
-
+        // seçili projeye yeni görev eklenmesi için yönlendirme yapan metot
         private void menu_gorevEkle_Click(object sender, EventArgs e)
         {
             int i = list_projelerim.SelectedIndex;
@@ -110,6 +109,7 @@ namespace Proje_Takip
         }
 
 
+        // seçili projeye kişi atamaları yapılması için yönlendirme yapan metot
         private void menu_kisiDuzenle_Click(object sender, EventArgs e)
         {
             int i = list_projelerim.SelectedIndex;
@@ -121,7 +121,11 @@ namespace Proje_Takip
 
         #region SÜRÜKLE BIRAK
         int surukle = 0;
-
+        //List_yapılacakların mouseDown'ına eklediğimiz mouse click eventlerini kontrol ediyoruz
+        //sağ tıklama ile gorev'i görüntülüyoruz yani
+        //o görevin detayını ve istersek alt görevi eklebiliyoruz.
+        // sol tıklama ilede sürükle bırak eventini aktif hale getirip aktıralacak
+        //Dosyası kopyalıyoruz bir nevi
         private void list_yapilacak_MouseDown(object sender, MouseEventArgs e)
         {
             if (list_yapilacak.SelectedItem != null)
@@ -136,9 +140,12 @@ namespace Proje_Takip
                 }
             }
         }
-    
-               		 
-	    
+
+
+        //DranEnter'da ise dosyayı kopyalamak için  surukle'i 0'a eşit olup
+        //olmadığını kontrol etmemiz gerekiyor
+        // eğer etmezsek 1.ci listbok olan yapılacaklardan direkt olarak
+        //tamamlanan listbox'a  atılabilir bilgimiz
         private void list_yapiliyor_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Text) && surukle==0 )
@@ -150,9 +157,12 @@ namespace Proje_Takip
                 e.Effect = DragDropEffects.None;
             }
         }
-        
-    
 
+
+        // Burada ilk olarak nesneyi arıyoruz listbox içerisinde
+        //eğer liste yoksa alttaki işlemleri yapıyoruz
+        //eğer bunu yapmazsak program yanlış anlar ve dosyayı tekrardan
+        //İçinde bulunduğumuz list_box'a atar
         private void list_yapiliyor_DragDrop(object sender, DragEventArgs e)
         {
             if (!list_yapiliyor.Items.Contains(e.Data.GetData(DataFormats.Text)))
@@ -163,8 +173,10 @@ namespace Proje_Takip
             }
             
         }
-    
 
+        //Dragenter eventi başladıında surukleyi== 1 mi
+        //Diye kontrol ediyoruz bunun sebebi
+        //listyapılıyordan mı geliyor eğer gelirse işlem başarılı
         private void list_tamamlanan_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Text)&& surukle==1)
@@ -177,6 +189,8 @@ namespace Proje_Takip
             }
         }
 
+        //burada yine yukarıdaki gibi kontrol ediyoruz
+        //içinde taşıdğımız dosya varmı varsa eklemiyoruz
         private void list_tamamlanan_DragDrop(object sender, DragEventArgs e)
         {
             if (!list_tamamlanan.Items.Contains(e.Data.GetData(DataFormats.Text)))
@@ -188,16 +202,23 @@ namespace Proje_Takip
             
         }
 
+        //list mounse enter üstüne geldiğinde surukleyi otomatik 0 yap
+        //ki diğer listboxlara doğru şekilde atabileleim
         private void list_yapilacak_MouseEnter(object sender, EventArgs e)
         {
             surukle = 0;
         }
 
+        //aynı şekilde surukle nin 1 olması lazım yoksa listboxlar arası
+        //veri taşımada yanlışlık olabilir
         private void list_yapiliyor_MouseEnter(object sender, EventArgs e)
         {
             surukle = 1;
         }
 
+        //yukarıdaki yapılacaklardaki list mousedown ile aynı özelliklere sahip
+        //sağ tıklama ile görev detayı
+        //sol tıklama ile dragdrop'u aktif ediyoruz.
         private void list_yapiliyor_MouseDown(object sender, MouseEventArgs e)
         {
             if (list_yapiliyor.SelectedItem != null)
@@ -216,8 +237,7 @@ namespace Proje_Takip
 
         #endregion
 
-        
-
+        // seçili görevin bilgilerini görüntüleme/güncelleme yapılması için yönlendirme yapan metot
         private void gorevGoruntule(string baslik, int durum = 1)
         {
             int i = list_projelerim.SelectedIndex;

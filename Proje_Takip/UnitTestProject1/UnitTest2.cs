@@ -10,12 +10,13 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
-
             Proje p = new Proje();
-            p.Id = 2;
-            p.Musteri = "Myth Coffee";
-            p.ProjeAdi = "Adisyon Yazılım Projesi";
 
+            p.Id = 2;
+
+            p.Musteri = "Myth Coffee";
+
+            p.ProjeAdi = "Adisyon Yazılım Projesi";
         }
     }
 }

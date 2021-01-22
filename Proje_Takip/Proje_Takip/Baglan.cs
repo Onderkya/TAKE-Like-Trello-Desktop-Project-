@@ -14,34 +14,42 @@ namespace Proje_Takip
 
         public static User Hesap;
 
+        // SERVER DB BAĞLANTILI CONNECTİONSTRİNG
+        //SqlConnection bag = new SqlConnection(@"Data Source=DESKTOP-TP0F9QD\SQLEXPRESS;Initial Catalog=projeTakip;Integrated Security=True");
 
-        //SqlConnection bag = new SqlConnection(@"Data Source=DESKTOP-TP0F9QD\SQLEXPRESS;Initial Catalog=projeTakip;Integrated Security=True"); //SERVER bağlantı
-        // SqlConnection bag = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\projeTakip.mdf;Integrated Security=True;Connect Timeout=30"); //LOCAL bağlantı
-        SqlConnection bag = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\projeTakip.mdf;Integrated Security=True;");
+        // LOCAL DB BAĞLANTILI CONNECTİONSTRİNG (İLKAY)
+        SqlConnection bag = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\projeTakip.mdf;Integrated Security=True;Connect Timeout=30");
 
+        // LOCAL DB BAĞLANTILI CONNECTİONSTRİNG (ÖNDER)
+        //SqlConnection bag = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\bin\Debug\projeTakip.mdf;Integrated Security=True;Connect Timeout=30");
+
+
+        // Singleton tasarım deseni mantığı kullanıldığından örnek yaratılmaması için kurucu metot private yapılmıştır
         private Baglan()
         {
-            // örnek yaratılmaması için kurucu metot private oluşturuldu
+            //
         }
 
         
+        // Tek nesne mantığından dolayı Baglan tipindeki nesne örneği static oluşturulmuştur
         public static Baglan Baglanti()
         {
-            if (_baglan == null)                                    // eğer _baglan öğesi boş ise;
-                _baglan = new Baglan();                            // PROGRAM ÇALIŞTIĞINDA OLUŞTURULAN TEK NESNE!!!
-            return _baglan;                                         // örnek değeri geri gönder
+            if (_baglan == null) 
+                _baglan = new Baglan();  
+            return _baglan;    
         }
 
 
-
+        // Baglantının açık olup olmadığını kontol eden metot
         void baglantiKontrol()
         {
-            if (bag.State == System.Data.ConnectionState.Closed)    //bağlantı kapalı ise bağlantıyı aç
+            if (bag.State == System.Data.ConnectionState.Closed) 
                 bag.Open();
         }
 
 
         #region KAYIT
+        // Yeni kullanıcı yakıt işlemini yapan metot
         public bool kayit(User kullanici)
         {
             bool onay = false;
@@ -60,12 +68,11 @@ namespace Proje_Takip
                 bag.Close();
                 onay = true;
             }
-
             return onay;
         }
 
 
-
+        // Girilen kullanıcı adnın tekrar girilmesini engelleyen kontrol edici metot
         private bool tekrarKayitKontrol(string kullanciAdi)
         {
             bool onay = true;
@@ -84,6 +91,7 @@ namespace Proje_Takip
 
 
         #region GİRİŞ
+        // kullanıcı adı ve şifrenin doğruluğunu kontrol eden metot
         public bool girisKontrol(string kullaniciAdi, string parola)
         {
             bool onay = false;
@@ -102,7 +110,7 @@ namespace Proje_Takip
         }
 
 
-
+        // girişi yapıldığında kullanıcı bilgilerini static nesneye aktaran metot
         private void giris(int id, string ad, string soyad, string kullanici)
         {
             if (Hesap == null)
@@ -116,6 +124,7 @@ namespace Proje_Takip
 
 
         #region PROJE
+        // yeni proje oluşturulan metot
         public void yeniProje(Proje yeniProje)
         {
             baglantiKontrol();
@@ -142,7 +151,7 @@ namespace Proje_Takip
         }
 
 
-
+        // mevcut proje bilgilerini güncelleyen metot
         public void projeDuzenle(Proje mevcutProje)
         {
             baglantiKontrol();
@@ -156,7 +165,7 @@ namespace Proje_Takip
         }
 
 
-
+        // giriş yapana kullanıcın dahil olduğu projeleri liste içine alan metot
         public List<Proje> projeListele()
         {
             List<Proje> projelerim = new List<Proje>();
@@ -209,12 +218,11 @@ namespace Proje_Takip
                 bag.Close();
                 i++;
             }
-
             return projelerim;
         }
 
 
-
+        // projeye kişi eklemek için tüm kullanıcılar içinde girilen aramayı yapan metot
         public List<User> kisiAra(string aranan, int projeId)
         {
             List<User> k = new List<User>();
@@ -239,6 +247,7 @@ namespace Proje_Takip
 
 
         #region GÖREV
+        // yeni görev girişi yapan metot
         public bool gorevEkle(Gorev gorevEkle, int projeId)
         {
             bool onay = false;
@@ -283,6 +292,7 @@ namespace Proje_Takip
         }
 
 
+        // mevcut görevin bilgilerini günelleyen metot
         public bool gorevDuzenle(Gorev gorevGuncelle, int projeId)
         {
             bool onay = false;
@@ -313,6 +323,7 @@ namespace Proje_Takip
         }
 
 
+        // girilen görev başlığının aynı projede varolup olmadığını kontrolü yapan metot
         private bool tekrarKayitKontrol(int projeId, string baslik, bool yeni = true, int gorevId = 0)
         {
             bool onay = true;
@@ -336,6 +347,7 @@ namespace Proje_Takip
         }
 
 
+        // göreve sorumlu kullanıcı ataması yapan metot
         public void goreveKisiEkle(List<string> kisiler, int projeid)
         {
             baglantiKontrol();
@@ -372,6 +384,7 @@ namespace Proje_Takip
         }
 
 
+        // görevin durumunu öğrenen metot
         public int gorevDurumOgren(int gorevID)
         {
             int durum = 0;
@@ -387,6 +400,8 @@ namespace Proje_Takip
             return durum;
         }
 
+
+        // görev bilgilerininin atamasını yapan metot
         public Gorev gorevIdOgren(int projeId, string baslik)
         {
             Gorev gr = new Gorev();
@@ -420,6 +435,8 @@ namespace Proje_Takip
             return gr;
         }
 
+
+        // görevin durumunu güncelleyen metot
         public void gorevDurumDegistir(int projeId, string baslik, int durum)
         {
             Gorev g = new Gorev();
@@ -448,10 +465,10 @@ namespace Proje_Takip
                 cmd.ExecuteNonQuery();
                 bag.Close();
             }
-
         }
 
 
+        // görev hareketlerini listeleyen metot
         public DataTable gorevHareketleri(int gorevId)
         {
             DataTable dt = new DataTable();
@@ -463,6 +480,7 @@ namespace Proje_Takip
         }
 
 
+        // göreve kontrol elemanı ekleyen metot
         public void kontrolListesiGuncelle(KontrolElemani kontolElemani, int gorevId)
         {            
             baglantiKontrol();
@@ -473,13 +491,11 @@ namespace Proje_Takip
             cmd.ExecuteNonQuery();
             bag.Close();
         }
-
         #endregion
 
-
-
+        
         #region SÜRE HESAPLAMA
-
+        // seçili kişinin görev bitirme ortalamasını hesaplayan metot
         public int KisiOrtalamasi(int UserId)
         {
             int ortalamaSure = 0;
@@ -496,6 +512,7 @@ namespace Proje_Takip
         }
         
 
+        // seçili görevin ne kadar süre yapılıyorda kaldığını hesaplayan metot
         public int GecenSure(int gorevId, int durum = 1)
         {
             baglantiKontrol();
@@ -531,7 +548,6 @@ namespace Proje_Takip
         }
 
         #endregion
-
                 
     }
 }

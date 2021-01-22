@@ -90,11 +90,11 @@
     </Compile>
     <Compile Include="Baglan.cs" />
     <Compile Include="Crypt.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="GirisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="Gorev.cs" />
     <Compile Include="KayitOl.cs">
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="AnaEkran.resx">
       <DependentUpon>AnaEkran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KayitOl.resx">
       <DependentUpon>KayitOl.cs</DependentUpon>

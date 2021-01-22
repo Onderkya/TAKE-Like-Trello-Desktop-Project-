@@ -38,8 +38,6 @@
             this.cmb_gorevli = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txt_aciklama = new DevExpress.XtraEditors.MemoEdit();
             this.label5 = new System.Windows.Forms.Label();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.txt_baslik = new DevExpress.XtraEditors.TextEdit();
@@ -55,12 +53,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_durum = new DevExpress.XtraEditors.TextEdit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.txt_projeid.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_projeAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_gorevli.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_aciklama.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_baslik.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -68,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_tahmini.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_tamamlanan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_durum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -159,29 +157,6 @@
             this.label5.Size = new System.Drawing.Size(100, 26);
             this.label5.TabIndex = 12;
             this.label5.Text = "Açıklama";
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(17, 448);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(566, 220);
-            this.gridControl1.TabIndex = 8;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Appearance.HeaderPanel.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridView1.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridView1.Appearance.Row.Options.UseFont = true;
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsBehavior.ReadOnly = true;
-            this.gridView1.OptionsPrint.PrintSelectedRowsOnly = true;
-            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // label7
             // 
@@ -348,11 +323,25 @@
             this.txt_durum.Size = new System.Drawing.Size(251, 32);
             this.txt_durum.TabIndex = 30;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(17, 446);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dataGridView1.Size = new System.Drawing.Size(566, 222);
+            this.dataGridView1.TabIndex = 31;
+            // 
             // YeniGorev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1321, 770);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_durum);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_tamamlanan);
@@ -364,7 +353,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_kaydet);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_aciklama);
             this.Controls.Add(this.cmb_gorevli);
@@ -384,8 +372,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_projeAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_gorevli.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_aciklama.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_baslik.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
@@ -393,6 +379,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_tahmini.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_tamamlanan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_durum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,8 +395,6 @@
         private DevExpress.XtraEditors.ComboBoxEdit cmb_gorevli;
         private DevExpress.XtraEditors.MemoEdit txt_aciklama;
         private System.Windows.Forms.Label label5;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.Label label7;
         private DevExpress.XtraEditors.SimpleButton btn_kaydet;
         private DevExpress.XtraEditors.TextEdit txt_baslik;
@@ -425,5 +410,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private DevExpress.XtraEditors.TextEdit txt_durum;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
